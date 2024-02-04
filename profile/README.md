@@ -1,9 +1,14 @@
-![](assets/title.png)
+![](assets/banner.png)
 
-The study of landslides spans from pre-failure mechanisms to post-failure propagation. The risk posed by landslides often relies more on the latter, and quantitative analysis for it can also describe the hazard caused by landslides more intuitively. The aim of this project is to improve the simulation efficiency and accuracy of research in landslide propagation mechanisms, as well as to make new discoveries that would not be possible using traditional methods alone.
+The simulation of post-landslide propagation is a complex nonlinear problem involving a wide range of physical processes, such as rock breakage, soil deformation, fluid flow and multi-physical coupling. The organization stores relevant code, including numerical simulation tools, potential failure surface analysis, and post-processing.
 
-Simulating the run-out process of landslides is more complicated than expected. One of the main issues is that landslide is a complex, non-linear problem that involves a wide range of physical processes, such as rock fragmentation, soil deformation, fluid flow, and multi-physics field coupling. Consequently, we need 1) a good understanding of the physical knowledge, and 2) accurate data from real cases. Furthermore, traditional numerical simulations are computationally intensive. The real cases of landslides will lead to a large-scale computing model, it will take a few days or even more than one week to get the results. Once you want to change some parameters in the model, the whole simulation will start from zero again.
+- **MaterialPointSolver.jl** - For similar large deformation situations, the material point method that takes advantage of the Euler and Lagrange perspectives performs better. Materialpoint Solver.JL offers high-performance solutions that are backend independent. We have implemented an efficient version of MPM with Julia and have also flexibly extended it to multi-Gpus platforms. In addition to the built-in computational flow, we also allow users to implement their own computational flow or constitutive model at a fairly low cost.
 
+- **MaterialPointGenerator.jl** - Help users to quickly generate from DEM file for MPM simulation material point, the generated files through the use of simple modifications should and can be applied to other structured grid MPM program.
+
+- **SlopingLocalBaseLevel.jl** - SLBL is a method that can automatically find potential failure surfaces from DEM. We used Julia and Pluto.jl to implement a version suitable for teaching/demonstration purposes, but also to compute using code alone.
+
+ - The organization also stores previously relevant work, as well as related "miscellaneous" content.
 
 
 
@@ -11,10 +16,12 @@ Simulating the run-out process of landslides is more complicated than expected. 
 ## Acknowledgement 👏
 
 This project is sponserd by ‍ **Université de Lausanne**,  **Risk Group (ISTE)**, **Swiss Geocomputing Centre**, and  **China Scholarship Council [中国国家留学基金管理委员会]**.
-Many thanks to Prof. Dr. Michel Jaboyedoff, Prof. Dr. Yury podladchikov , Dr. Marc-Henri Derron, Dr. Wyser Emmanuel, and Prof. Dr. Gang Mei for their help. ❤
+Many thanks to Prof. Michel Jaboyedoff, Prof. Dr. Yury Podladchikov, Prof. Dr. Marc-Henre Dirron, Dr. Ludovic Rass, Dr. Wyser Emmaual, and Prof. Dr. Gang Mei for their help. ❤
 
 ---
 
-© 2021-2025 LandslideSIM <br>
-RISK GROUP (ISTE) - Universitvé de Lausanne 🇨🇭<br>
-All Rights Reserved 🎉
+<div align=center>
+2021-2025 LandslideSIM <br>
+Risk Group 🍷 <br>
+Universitvé de Lausanne 🇨🇭<br>
+</div>
