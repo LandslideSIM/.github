@@ -15,7 +15,8 @@ We focus on simulating the post-failure motion of landslides, which typically in
 
 This project is sponserd by [Risk Group | Université de Lausanne](https://wp.unil.ch/risk/) and [China Scholarship Council [中国国家留学基金管理委员会]](https://www.csc.edu.cn/).
 
----
+<br>
+<br>
 
 <div align=center>
 Risk Group | Universitvé de Lausanne<br>
