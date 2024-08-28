@@ -18,6 +18,5 @@ This project is sponserd by [Risk Group | Université de Lausanne](https://wp.un
 ---
 
 <div align=center>
-2024 LandslideSIM <br>
 Risk Group | Universitvé de Lausanne<br>
 </div>
