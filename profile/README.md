@@ -3,7 +3,7 @@
 
 Landslides, as a natural phenomenon, can lead to devastating outcomes, including loss of life and severe economic impacts. With growing populations, the expansion of residential and industrial areas into unstable hillsides has heightened the risk and frequency of landslides. 
 
-We focus on simulating the post-failure motion of landslides, which typically involves large deformation challenges. Mesh-based numerical methods often suffer from mesh distortion issues, but the Material Point Method (MPM), which couples Lagrangian and Eulerian perspectives, effectively overcomes this problem. For computational efficiency, we implement our algorithms using the Julia Language, designed for high-performance numerical computing. This organization includes actively developed packages and archives of code from previous papers.
+We focus on simulating the post-failure motion of landslides, which typically involves large deformation challenges. Mesh-based numerical methods suffer from mesh distortion issues, but the Material Point Method (MPM), which couples Lagrangian and Eulerian perspectives, effectively overcomes this problem. For computational efficiency, we implement our algorithms using the Julia Language, designed for high-performance numerical computing. This organization includes actively developed packages and archives of code from previous papers.
 
 - **MaterialPointSolver.jl** - A backend-agnostic MPM solver in Julia Language. It is suitable for rapid prototyping and allows seamless transition to production environments to solve high-resolution models. Its efficiency, flexibility, and ease of use enhance the practicality of MPM in complex geotechnical engineering modeling.
 
