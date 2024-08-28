@@ -1,5 +1,3 @@
-![1](./assets/banner.png)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![email](https://img.shields.io/badge/contact-zenan.huo@unil.ch-purple)](mailto:zenan.huo@unil.ch)
 
