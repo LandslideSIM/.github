@@ -1,27 +1,22 @@
-![](assets/banner.png)
+![1](./assets/banner.png)
 
-The simulation of post-landslide propagation is a complex nonlinear problem involving a wide range of physical processes, such as rock breakage, soil deformation, fluid flow and multi-physical coupling. The organization stores relevant code, including numerical simulation tools, potential failure surface analysis, and post-processing.
+Landslides, as a natural phenomenon, can lead to devastating outcomes, including loss of life and severe economic impacts. With growing populations, the expansion of residential and industrial areas into unstable hillsides has heightened the risk and frequency of landslides. 
 
-- **MaterialPointSolver.jl** - For similar large deformation situations, the material point method that takes advantage of the Euler and Lagrange perspectives performs better. Materialpoint Solver.JL offers high-performance solutions that are backend independent. We have implemented an efficient version of MPM with Julia and have also flexibly extended it to multi-Gpus platforms. In addition to the built-in computational flow, we also allow users to implement their own computational flow or constitutive model at a fairly low cost.
+We focus on simulating the post-failure motion of landslides, which typically involves large deformation challenges. Traditional mesh-based numerical methods often suffer from mesh distortion issues, but the Material Point Method (MPM), which couples Lagrangian and Eulerian perspectives, effectively overcomes this problem. For computational efficiency, we implement our algorithms using the Julia Language, designed for high-performance numerical computing. This organization includes actively developed packages and archives of code from previous papers.
 
-- **MaterialPointGenerator.jl** - Help users to quickly generate from DEM file for MPM simulation material point, the generated files through the use of simple modifications should and can be applied to other structured grid MPM program.
+- **MaterialPointSolver.jl** - A backend-agnostic MPM solver in Julia Language. It is suitable for rapid prototyping and allows seamless transition to production environments to solve high-resolution models. Its efficiency, flexibility, and ease of use enhance the practicality of MPM in complex geotechnical engineering modeling.
 
-- **SlopingLocalBaseLevel.jl** - SLBL is a method that can automatically find potential failure surfaces from DEM. We used Julia and Pluto.jl to implement a version suitable for teaching/demonstration purposes, but also to compute using code alone.
+- **MaterialPointGenerator.jl** - Help users to quickly generate MPM model from DEM files. The generated files through the use of simple modifications should be applied to other structured grid MPM program.
 
- - The organization also stores previously relevant work, as well as related "miscellaneous" content.
-
-
-
+*More tools is on coming...*
 
 ## Acknowledgement 👏
 
-This project is sponserd by ‍ **Université de Lausanne**,  **Risk Group (ISTE)**, **Swiss Geocomputing Centre**, and  **China Scholarship Council [中国国家留学基金管理委员会]**.
-Many thanks to Prof. Michel Jaboyedoff, Prof. Dr. Yury Podladchikov, Prof. Dr. Marc-Henre Dirron, Dr. Ludovic Rass, Dr. Wyser Emmaual, and Prof. Dr. Gang Mei for their help. ❤
+This project is sponserd by [Risk Group | Université de Lausanne](https://wp.unil.ch/risk/) and [China Scholarship Council [中国国家留学基金管理委员会]](https://www.csc.edu.cn/).
 
 ---
 
 <div align=center>
-2021-2025 LandslideSIM <br>
-Risk Group 🍷 <br>
-Universitvé de Lausanne 🇨🇭<br>
+2024 LandslideSIM <br>
+Risk Group | Universitvé de Lausanne<br>
 </div>
