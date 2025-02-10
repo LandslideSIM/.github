@@ -9,6 +9,8 @@ We focus on simulating the post-failure motion of landslides, which typically in
 
 - **MaterialPointGenerator.jl** - Help users to quickly generate MPM model from DEM files. The generated files through the use of simple modifications should be applied to other structured grid MPM programs.
 
+- **MaterialPointVisualizer.jl** - Export MPM/other particle data to VTP files for visualization in ParaView. Surface reconstruction is also supported for further rendering of results ([splashsurf](https://github.com/InteractiveComputerGraphics/splashsurf)).
+
 *More tools are on coming...*
 
 ## Acknowledgement 👏
